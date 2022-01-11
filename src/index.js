@@ -23,11 +23,11 @@ app.use(morgan('combined'));
 //template engine
 app.engine('hbs',engine({ extname: '.hbs' }));
 
-app.set('view engine            ', 'hbs');
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, '/resources/views'));
 
 //HTTP logger
-app.use(                morgan('combined'));
+app.use(morgan('combined'));
 
 //Route init
 route(app);
